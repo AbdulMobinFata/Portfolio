@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 :root{
     --primary-color: #45505B;
     --secondry-color: #0563BB;
@@ -8,4 +10,87 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'raleway', sans-serif;
 }
+
+/*  Hero Content */
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    position: relative;
+    flex-direction: column;
+}
+
+.hero-text{
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    transform: translateY(-50%);
+}
+
+.hero-text>h1{
+    font-size: 60px;
+    font-weight: 800;
+    letter-spacing: 4px;
+    line-height: 56px;
+    color: var(--primary-color);
+    margin: 0;
+    margin-bottom: 25px;
+}
+
+/* Hero wrapper text */
+.hero--wrapper-text{
+    margin-bottom: 30px;
+}
+
+.hero--wrapper-text>span{
+    font-size: 26px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--secondry-color);
+}
+
+/* Hero Social Icons */
+
+.hero--social-icon>i{
+    font-size: 25px;
+    margin-right: 12px;
+    color: var(--primary-color);
+}
+
+/*  Hero Navaber */
+.hero-navbar{
+    position: fixed;
+    top: 50%;
+    left: 1%;
+    display: flex;
+    flex-direction: column;
+    transform: translateY(-50%);
+}
+
+.hero-navbar>span{
+    margin: 5px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--tertiary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-navbar>span>i{
+    font-size: 20px;
+    color: var(--primary-color);
+}
+
+.hero-navbar .active{
+    background-color: var(--secondry-color);
+}
+
+.hero-navbar .active>i{
+    background-color: var(--secondry-color);
+    color: white;
+}
+
