@@ -2,7 +2,7 @@
 
 var typed = new Typed(".hero--dynamic-text", {
     strings: ["Devoloper", "Freelancer", "Youtuber", "Designer"],
-    typeSpeed: 150,
-    backSpeed: 150,
-    loop: true,
+    typeSpeed: 100,
+    backSpeed: 100,
+    loop: true
       });
