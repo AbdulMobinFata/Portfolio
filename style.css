@@ -22,6 +22,15 @@ body{
     flex-direction: column;
 }
 
+.hero-pic>img{
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+    border-radius: 20px;
+}
+
 .hero-text{
     position: absolute;
     top: 50%;
