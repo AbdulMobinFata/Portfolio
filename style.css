@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 :root{
-    --primary-color: #45505B;
+    --primary-color: #363f47;
     --secondry-color: #0563BB;
-    --tertiary-color: #F2F3F5;
+    --tertiary-color: #e0e0e4;
 }
 
 body{
@@ -11,6 +11,8 @@ body{
     padding: 0;
     box-sizing: border-box;
     font-family: 'raleway', sans-serif;
+    font-weight: 700;
+    letter-spacing: .3px;
 }
 
 /*  Hero Content */
@@ -19,7 +21,6 @@ body{
     height: 100vh;
     background: url();
     position: relative;
-    flex-direction: column;
 }
 
 .hero-pic>img{
@@ -34,7 +35,7 @@ body{
 .hero-text{
     position: absolute;
     top: 50%;
-    left: 15%;
+    left: 13%;
     transform: translateY(-50%);
 }
 
@@ -46,18 +47,27 @@ body{
     color: var(--primary-color);
     margin: 0;
     margin-bottom: 25px;
+    cursor: pointer;
 }
 
 /* Hero wrapper text */
 .hero--wrapper-text{
     margin-bottom: 30px;
+    cursor: pointer;
 }
 
-.hero--wrapper-text>span{
+.hero--wrapper-text>.hero--dynamic-text{
     font-size: 26px;
     font-weight: 600;
     letter-spacing: 1px;
     color: var(--secondry-color);
+}
+
+.hero--static-text{
+    font-size: 26px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--primary-color);
 }
 
 /* Hero Social Icons */
@@ -66,7 +76,7 @@ body{
     font-size: 25px;
     margin-right: 12px;
     color: var(--primary-color);
-    transition: all .3s ease-in-out;
+    transition: all .2s ease-in-out;
     cursor: pointer;
 }
 
@@ -97,6 +107,7 @@ body{
     display: flex;
     flex-direction: column;
     transform: translateY(-50%);
+    cursor: pointer;
 }
 
 .hero-navbar>span{
@@ -124,3 +135,57 @@ body{
     color: white;
 }
 
+/* About me */
+
+.about-me{
+    height: 50vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr .7fr;
+    border: 1px solid black;
+    align-items: center;
+    color: var(--primary-color);
+}
+
+.about--me-all{
+    font-weight: 600;
+    margin-left: 20%;
+    width: 70%;
+}
+
+.about--me-all>h1{
+    font-weight: 800;
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.about--me-all>p{
+    margin-bottom: 25px;
+    line-height: 1.3;
+}
+
+.about--me-contacts div{
+    margin-bottom: 7px;
+}
+
+/* About Contact */
+
+.about--me-contacts{
+    display: grid;
+    grid-template-columns: .7fr 1fr;
+}
+
+
+/* Language skills */
+
+.lang-skills{
+    height: 100%;
+    background-color: rgb(255, 166, 0);
+}
+
+/* PC skills */
+    
+.pc-skills{
+        height: 50vh;
+        width: 100%;
+    }
