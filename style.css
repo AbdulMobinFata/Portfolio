@@ -11,7 +11,6 @@ body{
     padding: 0;
     box-sizing: border-box;
     font-family: 'raleway', sans-serif;
-    font-weight: 700;
     letter-spacing: .3px;
 }
 
@@ -21,23 +20,15 @@ body{
 .hero{
     width: 100%;
     height: 100vh;
-    background: url();
+    background: red;
     position: relative;
-}
-
-.hero-pic>img{
-    width: 400px;
-    position: absolute;
-    top: 50%;
-    right: 5%;
-    transform: translateY(-50%);
-    border-radius: 20px;
 }
 
 .hero-text{
     position: absolute;
     top: 50%;
-    left: 13%;
+    left: 0%;
+    margin-left: 12%;
     transform: translateY(-50%);
 }
 
@@ -50,6 +41,15 @@ body{
     margin: 0;
     margin-bottom: 25px;
     cursor: pointer;
+}
+
+.hero-pic>img {
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+    border-radius: 20px;
 }
 
 /* Hero wrapper text */
@@ -143,16 +143,15 @@ body{
     height: 50vh;
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr .7fr;
-    border: 1px solid black;
+    grid-template-columns: .8fr .3fr;
     align-items: center;
     color: var(--primary-color);
+    margin-left: 12%;
 }
 
 .about--me-all{
-    margin-left: 20%;
     font-weight: 600;
-    width: 70%;
+    width: 100%;
 }
 
 .about--me-all>h1{
@@ -162,6 +161,7 @@ body{
 }
 
 .about--me-all>p{
+    font-weight: 700;
     margin-bottom: 25px;
     line-height: 1.3;
 }
@@ -175,19 +175,92 @@ body{
 .about--me-contacts{
     display: grid;
     grid-template-columns: .7fr 1fr;
+    font-weight: 700;
 }
 
+.about--me-contacts>div:last-child{
+    margin-left: 50px;
+}
 
 /* Language skills */
 
 .lang-skills{
     height: 100%;
-    background-color: rgb(255, 166, 0);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    font-weight: 700;
+}
+
+.persian-skill,
+.pashto-skill,
+.english-skill,
+.arabic-skill{
+    margin-bottom: 10px;
+    width: 75%;
+}
+
+.arabic-skill{
+    margin-bottom: 35px;
+}
+
+.persian-skill>div,
+.pashto-skill>div,
+.english-skill>div,
+.arabic-skill>div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.bars{
+    display: block;
+    width: 100%;
+    height: 9px;
+    margin: 10px 0;
+    border-radius: 30px;
+    background-color: var(--tertiary-color);
+    overflow: hidden;
+    box-shadow: 0px 4px 5px rgba(0,0,0,0.2);
+}
+
+.persian-percent{
+    display: block;
+    background-color: aqua;
+    width: 85%;
+    height: 100%;
+}
+
+.pashto-percent{
+    display: block;
+    background-color: tomato;
+    width: 50%;
+    height: 100%;
+}
+
+.english-percent{
+    display: block;
+    background-color: blueviolet;
+    width: 50%;
+    height: 100%;
+}
+
+.arabic-percent{
+    display: block;
+    background-color: #0563BB;
+    width: 25%;
+    height: 100%;
 }
 
 /* PC skills */
     
-.pc-skills{
-        height: 50vh;
-        width: 100%;
-    }
+.technical-skills{
+    height: 50vh;
+    width: 100%;
+    background: #363f47;
+}
+
+.technical--skill-content{
+    margin-left: 12%;
+}
