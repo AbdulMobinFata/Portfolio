@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 :root{
-    --primary-color: #363f47;
+    --primary-color: black;
     --secondry-color: #0563BB;
     --tertiary-color: #e0e0e4;
 }
@@ -14,22 +14,23 @@ body{
     letter-spacing: .3px;
 }
 
-/* All content Container */
-
 /*  Hero Content */
 .hero{
     width: 100%;
     height: 100vh;
-    background: red;
     position: relative;
+    background-image: url(Images/background.jpg);
+    background-position: center;
+    background-size: cover;
 }
+
 
 .hero-text{
     position: absolute;
     top: 50%;
     left: 0%;
-    margin-left: 12%;
     transform: translateY(-50%);
+    padding-left: 10%;
 }
 
 .hero-text>h1{
@@ -140,18 +141,18 @@ body{
 /* About me */
 
 .about-me{
-    height: 50vh;
-    width: 100%;
+    height: 60vh;
+    width: 90%;
     display: grid;
-    grid-template-columns: .8fr .3fr;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
     color: var(--primary-color);
-    margin-left: 12%;
+    padding-left: 10%;
 }
 
 .about--me-all{
     font-weight: 600;
-    width: 100%;
+    width: 95%;
 }
 
 .about--me-all>h1{
@@ -184,9 +185,9 @@ body{
 
 /* Language skills */
 
-.lang-skills{
+.dev-skills{
     height: 100%;
-    width: 100%;
+    width: 90%;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -194,22 +195,22 @@ body{
     font-weight: 700;
 }
 
-.persian-skill,
-.pashto-skill,
-.english-skill,
-.arabic-skill{
+.html-skill,
+.css-skill,
+.js-skill,
+.bootstrap-skill{
     margin-bottom: 10px;
     width: 75%;
 }
 
-.arabic-skill{
+.bootstrap-skill{
     margin-bottom: 35px;
 }
 
-.persian-skill>div,
-.pashto-skill>div,
-.english-skill>div,
-.arabic-skill>div{
+.html-skill>div,
+.css-skill>div,
+.js-skill>div,
+.bootstrap-skill>div{
     display: flex;
     justify-content: space-between;
 }
@@ -225,42 +226,59 @@ body{
     box-shadow: 0px 4px 5px rgba(0,0,0,0.2);
 }
 
-.persian-percent{
+.html-percent{
     display: block;
     background-color: aqua;
-    width: 85%;
+    width: 80%;
     height: 100%;
 }
 
-.pashto-percent{
+.css-percent{
     display: block;
     background-color: tomato;
-    width: 50%;
+    width: 70%;
     height: 100%;
 }
 
-.english-percent{
+.js-percent{
     display: block;
     background-color: blueviolet;
-    width: 50%;
+    width: 30%;
     height: 100%;
 }
 
-.arabic-percent{
+.bootstrap-percent{
     display: block;
     background-color: #0563BB;
-    width: 25%;
+    width: 15%;
     height: 100%;
 }
+/* My Seervices Section */
 
-/* PC skills */
-    
-.technical-skills{
-    height: 50vh;
-    width: 100%;
-    background: #363f47;
+.my-services{
+    height: 90vh;
+    width: 80%;
+    padding-left: 10%;
+    padding-top: 7%;
+    display: grid;
+    grid-template-rows: .4fr 1fr;
+
 }
 
-.technical--skill-content{
-    margin-left: 12%;
+.services-heading{
+    text-align: center;
+}
+
+.services-parts{
+    display: flex;
+    justify-content: space-around;
+}
+
+.web-devolope,
+.graphic-design,
+.services-support{
+    height: 350px;
+    width: 280px;
+    background-color: red;
+    border-radius: 20px;
 }
