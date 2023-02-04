@@ -4,6 +4,7 @@
     --primary-color: black;
     --secondry-color: #0563BB;
     --tertiary-color: #e0e0e4;
+    --fourth-color: rgb(121, 121, 121);
 }
 
 body{
@@ -23,7 +24,6 @@ body{
     background-position: center;
     background-size: cover;
 }
-
 
 .hero-text{
     position: absolute;
@@ -78,7 +78,7 @@ body{
 .hero--social-icon>i{
     font-size: 25px;
     margin-right: 12px;
-    color: var(--primary-color);
+    color: rgb(63, 63, 63);
     transition: all .2s ease-in-out;
     cursor: pointer;
 }
@@ -144,24 +144,35 @@ body{
     height: 60vh;
     width: 90%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr .5fr;
     align-items: center;
     color: var(--primary-color);
     padding-left: 10%;
 }
 
+.about-me>h1{
+    text-align: center;
+    font-size: 35px;
+    font-weight: 800;
+    padding-right: 10%;
+    padding: 50px 10% 40px 50px;
+}
+
 .about--me-all{
     font-weight: 600;
     width: 95%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .about--me-all>h1{
     font-weight: 800;
     font-size: 30px;
     margin-bottom: 40px;
+    text-align: center;
 }
 
-.about--me-all>p{
+.about--me-pargraph>p{
     font-weight: 700;
     margin-bottom: 25px;
     line-height: 1.3;
@@ -190,7 +201,6 @@ body{
     width: 90%;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
     flex-direction: column;
     font-weight: 700;
 }
@@ -199,8 +209,8 @@ body{
 .css-skill,
 .js-skill,
 .bootstrap-skill{
-    margin-bottom: 10px;
-    width: 75%;
+    width: 85%;
+    margin-left: 80px;
 }
 
 .bootstrap-skill{
@@ -253,32 +263,85 @@ body{
     width: 15%;
     height: 100%;
 }
-/* My Seervices Section */
+/* My Services Section */
 
 .my-services{
-    height: 90vh;
-    width: 80%;
-    padding-left: 10%;
-    padding-top: 7%;
+    height: 140vh;
+    width: 90%;
     display: grid;
     grid-template-rows: .4fr 1fr;
-
+    padding-left: 10%;
 }
 
-.services-heading{
+.services-heading>h1{
     text-align: center;
+    font-size: 35px;
+    font-weight: 800;
+    padding: 70px 10% 0px 50px;
+}
+
+.services-heading>p{
+    font-weight: 700;
+    margin-bottom: 25px;
+    line-height: 1.3;
+    text-align: center;
+    padding: 0 5% 5% 0;
 }
 
 .services-parts{
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-end: 0;
 }
 
 .web-devolope,
 .graphic-design,
+.logo-design,
+.contentcreation,
+.socialmedia-manage,
 .services-support{
-    height: 350px;
-    width: 280px;
-    background-color: red;
-    border-radius: 20px;
+    height: 220px;
+    width: 300px;
+    margin: 0px 0px 20px 0;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
 }
+
+.services-parts i{
+    margin-bottom: 30px;
+    font-size: 70px;
+    color: var(--secondry-color);
+}
+
+.services-parts span{
+    font-weight: 800;
+    letter-spacing: 1px;
+    display: block;
+    font-size: 20px;
+}
+
+.services-parts p{
+    font-weight: 600;
+    font-size: 15px;
+}
+
+/* Any Project */
+
+.any-project{
+    border: 1px solid black;
+    height: 60vh;
+    width: 100%;
+    margin-bottom: 20%;
+    margin-top: 5%;
+    background-image: url(https://images.unsplash.com/photo-1530832958973-ecfca22d3914?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NTUxMzc1OA&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080);
+    background-position: center;
+    background-size: cover;
+}
+
