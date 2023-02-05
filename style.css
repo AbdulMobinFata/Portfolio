@@ -130,7 +130,9 @@ body{
 }
 
 .hero-navbar .active{
+    box-sizing: content-box;
     background-color: var(--secondry-color);
+    border: 2px solid rgb(238, 237, 237);
 }
 
 .hero-navbar .active>i{
@@ -335,13 +337,103 @@ body{
 /* Any Project */
 
 .any-project{
-    border: 1px solid black;
     height: 60vh;
     width: 100%;
-    margin-bottom: 20%;
     margin-top: 5%;
     background-image: url(https://images.unsplash.com/photo-1530832958973-ecfca22d3914?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NTUxMzc1OA&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080);
     background-position: center;
     background-size: cover;
 }
 
+.anyproject-overlay{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(5, 99, 187, .9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.anyproject-overlay>p:first-child{
+    font-size: 50px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: white;
+    margin: 0;
+}
+
+.anyproject-overlay > p:nth-child(2){
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: white;
+    margin: 30px;
+}
+
+.anyproject-button button{
+    padding: 15px 45px;
+    margin: 20px;
+    border-radius: 50px;
+    border: 1.5px solid white;
+    background-color: transparent;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.anyproject-button button:hover{
+    color: var(--secondry-color);
+    border: 1.5px solid var(--secondry-color);
+    background-color: white;
+}
+
+.anyproject-button>:first-child{
+    padding: 15px 35px;
+}
+
+/* My Recent Works */
+
+.recent-works{
+    height: 100vh;
+    width: 90%;
+    padding-left: 10%;
+    display: grid;
+    grid-template-rows: .5fr 1fr;
+
+}
+
+.recentworks-heading>h1 {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 800;
+    padding: 70px 10% 0px 50px;
+    margin-left: 0;
+}
+
+.recentworks-part--content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.karafarini,
+.comingsoon,
+.myportfolio{
+    width: 350px;
+    height: 300px;
+    border: 1px solid black;
+    background-color: red;
+    overflow: hidden;
+}
+
+.karafarini{
+    background-image: url(Images/karafarini.png);
+    background-position: center;
+    background-size: cover;
+}
+.comingsoon,
+.myportfolio
